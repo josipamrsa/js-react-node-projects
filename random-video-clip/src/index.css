@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: brown;
+  font-size: 2.5vmin;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  font-size: 2vmin;
+}
+
+h1 {
+  color: goldenrod;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 4vmax;
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgb(134, 34, 34);
+}
+
+em {
+  color: #555555;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  min-width: 1300px;
+}
+
+.container > * {
+  margin-top: 3%;
+}
+
+.container h1 {
+  align-self: center;
+}
+
+.container-prikazi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.container-glavni {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-glavni > * {
+  margin-top: 1%;
+}
+
+.container-popularni > * {
+  margin-top: 1%;
+}
+
+.container-popularni {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.container-glavni h2 {
+  margin-bottom: 0;
+}
+
+.container-glavni p {
+  margin: 0;
+  margin-bottom: 2%;
+}
+
+.container-popularni h6, .container-popularni h2, .container-popularni p {
+  margin: 0;
+}
+
+.container-popularni h6 {
+  margin-top: 2%;
+  color: brown;
+}
+
+.container-popularni p {
+  margin-bottom: 2%;
+}
+
+.container-kontrole {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 3%;
+}
+
+.container-kontrole > * {
+  margin-right: 1%;
+}
+
+.lajk-botun, .novi-botun {
+  border: none;
+  background: none;
+  outline: none;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.lajk-botun {
+  background-color: rgb(117, 29, 29);
+  color: wheat;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.novi-botun {
+  background-color: rgb(129, 98, 19);
+  color:white;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.lajk-botun:hover, .novi-botun:hover {
+  background-color: black;
+}

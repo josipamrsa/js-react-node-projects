@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Izrada studentske iskaznice</title>
+        <script src="js/main.js"></script>
+        <link rel="stylesheet" href="css/main.css" />
+        
+    </head>
+
+    <body>
+        <div class="glavna-sekcija">                     
+            <form class="unos-podataka" name="unosForma"> 
+                <h1>Izrada studentske iskaznice </h1>  
+                        
+                <input type="text" id="ime" placeholder="Ime: " />
+                <input type="text" id="prezime" placeholder="Prezime: " />
+                <input type="text" id="fakultet" placeholder="Fakultet: " />
+                <input type="text" id="mjesto" placeholder="Mjesto: " />
+           
+                <h4>Profilna fotografija</h4>
+                <input type="file" accept="image/*" id="profilna" onchange="ucitanaSlika(event)" />
+                
+                <input type="button" id="generiraj" value="Izrada iskaznice"/>
+
+                <div id="info-poruka"></div>
+            </form>
+
+            <div>       
+                <div id="iskaznica" title="Iz filma 'Superbad'">
+                    <div class="slika">
+                        <img src="img/profil.JPG" alt="Profilna slika" id="profilna-slika"/>
+                        <footer>
+                            <p class="h-red">DATUM IZDAVANJA </p>
+                            <p id="p-datum"></p>
+                        </footer>   
+                    </div> 
+    
+                    <div class="sadrzaj">                       
+                        <header>
+                            <h1 class="h-naslov">HRVATSKA</h1>
+                            <h3 class="h-podnaslov">STUDENTSKA ISKAZNICA</h3>
+                        </header>
+
+                        <section id="broj-iskaznice">
+                                <p>BROJ ISKAZNICE: </p>
+                                <p id="p-broj">00000000</p>
+                        </section>
+        
+                        <section id="osobni-podaci">
+                            <div class="h-red">IME </div>
+                            <div class="h-red">PREZIME </div>
+                            <div class="h-red">FAKULTET </div>
+                            <div class="h-red">MJESTO </div>
+                            
+                            <div id="p-ime">Just</div>                        
+                            <div id="p-prezime">McLovin</div>                      
+                            <div id="p-fakultet">2COOL4SCHOOL</div>                       
+                            <div id="p-mjesto">Honolulu</div>                           
+                        </section>                                                         
+                    </div>     
+                </div>           
+            </div>
+            
+
+        </div>
+    </body>
+</html>
